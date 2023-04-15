@@ -37,42 +37,114 @@
                         <option value="3">Pasaporte</option>
                     </select>
                 </div>
-                <div class="form-group">
+
+                <!--para la identificacion-->
+                <div class="form-group" id="grupo__identificacion">
+				<label for="numeroIdentificacion" class="formulario__label">Identificacion</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="form-control" name="numeroIdentificacion" id="numeroIdentificacion" placeholder="AB123456">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La identificacion puede contener solo letras y numeros.</p>
+			</div>
+
+                <!--<div class="form-group">
                     <label for="numeroIdentificacion">Numero de Identificacio</label>
                     <input type="text" class="form-control" id="numeroDocumento">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el nombre-->
+                <div class="form-group" id="grupo__nombre">
+				    <label for="nombre" class="formulario__label">Nombre</label>
+				        <div class="formulario__grupo-input">
+					        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Digite su Nombre">
+					        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			    </div>
+
+                <!--<div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el apellido-->
+                <div class="form-group" id="grupo__apellido">
+				    <label for="apellido" class="formulario__label">Apellido</label>
+				        <div class="formulario__grupo-input">
+					        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Digite su Apellido">
+					        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			    </div>
+
+                <!--<div class="form-group">
                     <label for="apellido">Apellido</label>
                     <input type="text" class="form-control" id="apellido">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el celular-->
+                <div class="form-group" id="grupo__telefono">
+				<label for="celular" class="formulario__label">Celular</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="form-control" name="celular" id="celular" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+                <!--<div class="form-group">
                     <label for="celular">Numero Celular</label>
                     <input type="number" class="form-control" id="celular">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el email-->
+                <div class="form-group" id="grupo__correo">
+				<label for="email" class="formulario__label">E-mail</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="form-control" name="email" id="email" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+                <!--<div class="form-group">
                     <label for="email">E-Mail</label>
                     <input type="email" class="form-control" id="email">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el usuario linkedin-->
+                <div class="form-group" id="grupo__linkedin">
+				    <label for="linkedin" class="formulario__label">Tu Linkedin</label>
+				        <div class="formulario__grupo-input">
+					        <input type="text" class="form-control" name="linkedin" id="linkedin" placeholder="Tu Linkedin">
+					        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario Linkedin solo puede contener numeros y letras.</p>
+			    </div>
+
+                <!--<div class="form-group">
                     <label for="likedin">Usuario Likedin</label>
                     <input type="text" class="form-control" id="likedin">
-                </div>
+                </div>-->
 
-                <div class="form-group">
+                <!--para el usuario github-->
+
+                 <div class="form-group" id="grupo__github">
+				    <label for="github" class="formulario__label">Tu GitHub</label>
+				        <div class="formulario__grupo-input">
+					        <input type="text" class="form-control" name="github" id="github" placeholder="Tu GitHub">
+					        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario Linkedin solo puede contener numeros y letras.</p>
+			    </div>
+
+                <!--<div class="form-group">
                     <label for="github">Usuario Git Hub</label>
                     <input type="text" class="form-control" id="github">
-                </div>
+                </div>-->
 
-            </form>
+                </form>
 
         </div>
         <div class="modal-footer">
@@ -86,6 +158,7 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="../dist/index.js" type="module"></script>
 </body>
 </html>
